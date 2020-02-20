@@ -3,6 +3,10 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const MeetupSchema = new Schema({
+    eventName: {
+        type: String,
+        require: true
+    },
     sportType: {
         type: String,
         require: true
